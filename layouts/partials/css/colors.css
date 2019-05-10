@@ -1,3 +1,7 @@
+body {
+    background-color: {{ .Param "colors.site_background" }};
+}
+
 a {
     color: {{ .Param "colors.identifier" }};
 }
@@ -6,7 +10,11 @@ a:hover {
     color: {{ .Param "colors.identifier_dark" }};
 }
 
-div.main .content .markdown, div.header .name, div.header nav ul a:hover {
+div.header .name, h1, h2, h3, h4, h5, h6 {
+    color: {{ .Param "colors.headers" }};
+}
+
+div.main .content .markdown, div.header nav ul a:hover {
     color: {{ .Param "colors.foreground" }};
 }
 
