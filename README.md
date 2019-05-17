@@ -4,27 +4,24 @@ Personal Website for Chris Lagasse, based off the Cocoa EH theme for Hugo.
 
 > This is a fork of [Cocoa EH](https://www.github.com/mtn/cocoa-eh-hugo-theme), which is from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
 
-[![screenshot](https://raw.githubusercontent.com/soben/personal-site/master/images/screenshot.png)](https://raw.githubusercontent.com/soben/personal-site/master/images/screenshot.png)
+## Installing
 
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Getting Started
-
-From the root of your Hugo site, clone the theme into `themes/soben` by running:
+From the root of Hugo, clone the theme into `themes/soben` by running:
 
 ```
 git clone https://github.com/soben/personal-site.git themes/soben
 ```
 
-Then, generate your site's files by running:
+Then, generate site's files by running:
 
 ```
 hugo -t soben
+```
+
+## Developing
+
+```
+hugo serve -D
 ```
 
 ## License
