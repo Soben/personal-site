@@ -152,16 +152,11 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
-  {{ if .Site.Params.enlarged }}
-  max-width: 200px;
-  {{ else }}
   max-width: 100px;
-  {{ end }}
-  margin-left: -2em;
 }
 div.header .name {
   padding-top: 20px;
-  font-size: 45px;
+  font-size: 35px;
   font-family: 'Baloo Tamma', 'Open Sans', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   {{ if isset .Site.Params "titlestyle" }}
@@ -179,6 +174,7 @@ div.header .name {
   color: #375375;
 }
 div.header nav {
+  width:100%;
   margin-bottom: 16px;
 }
 div.header nav ul {
@@ -213,6 +209,9 @@ div.header nav ul a {
 }
 div.header nav ul a:hover {
   color: #111111;
+}
+div.footer {
+  margin-top: 40px;
 }
 div.footer .container {
   -webkit-align-items: center;
