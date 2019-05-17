@@ -231,7 +231,6 @@ div.footer .container a {
   font-size: 14px;
   margin-left: 6px;
   margin-right: 6px;
-  opacity: 0.6;
   -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -257,6 +256,9 @@ div.footer .container .copyright {
 div.footer .container .icons {
   flex-grow: 0.5;
   text-align: end;
+}
+div.footer .container .icons i {
+  font-size: 35px;
 }
 div.main .container {
   -webkit-align-items: center;
@@ -440,14 +442,14 @@ div.main .container .content .post-item {
     list-style: none;
 }
 a {
-  color: #428bca;
+  color: #C4564E;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 a:hover {
-  color: #2a6496;
+  color: #25282D;
 }
 img {
   max-width: 100%;
@@ -526,7 +528,7 @@ div.main .content .markdown pre code {
   font-size: 0.9rem;
 }
 div.main .content .markdown a code {
-  color: #428bca !important;
+  color: #C4564E !important;
 }
 div.main .content .markdown a code:hover {
   text-decoration: underline;
