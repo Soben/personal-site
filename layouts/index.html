@@ -10,11 +10,11 @@
 
             {{ if isset .Site.Params "latestpostcount" }}
                 <div class="posts">
-                {{ $nbPosts := len (where .Data.Pages "Section" "blog") }}
+                {{ $nbPosts := len (where .Data.Pages "Section" "articles") }}
                 {{ if gt $nbPosts 0 }}
                     <div class="page-heading">Latest posts</div>
                     <ul>
-                    {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "blog")).GroupByDate "Jan, 2006" "desc" }}
+                    {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "articles")).GroupByDate "Jan, 2006" "desc" }}
                         <li class="groupby">{{ .Key }}</li>
                         {{ range sort .Pages "Date" "desc" }}
                             {{ partial "li.html" . }}
@@ -23,25 +23,12 @@
                     </ul>
 
                     {{ if gt $nbPosts .Site.Params.latestpostcount }}
-                        <a href="./blog/" class="see-more">See more ...</a>
+                        <a href="./articles/" class="see-more">See more ...</a>
                     {{ end }}
                 {{ end }}
                 </div>
             {{ end }}
 
-            <div class="best-posts">
-            {{ $nbPosts := len (where .Data.Pages "Params.best" true) }}
-            {{ if gt $nbPosts 0 }}
-                <div class="page-heading">Best posts</div>
-                <ul>
-                {{ range sort .Data.Pages "Date" "desc" }}
-                    {{ if eq .Params.best true }}
-                        {{ partial "li.html" . }}
-                    {{ end }}
-                {{ end }}
-                </ul>
-            {{ end }}
-            </div>
         </div>
     </div>
 </div>
