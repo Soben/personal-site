@@ -1,7 +1,6 @@
 name = "Cocoa-EH"
 license = "MIT"
-licenselink = "https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE.md"
-description = "Cocoa Enhanced is a clean, fast and responsive theme with cool typography."
+description = "Theme based off Cocoa-Enhanced"
 homepage = "https://github.com/fuegowolf/cocoa-eh-hugo-theme"
 tags = ["clean", "fast", "responsive", "typography"]
 features = ["flexible", "fast", "highlights", "progressive images", "disqus"]

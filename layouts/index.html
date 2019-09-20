@@ -12,13 +12,9 @@
                 <div class="posts">
                 {{ $nbPosts := len (where .Data.Pages "Section" "articles") }}
                 {{ if gt $nbPosts 0 }}
-                    <div class="page-heading">Latest posts</div>
                     <ul>
-                    {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "articles")).GroupByDate "Jan, 2006" "desc" }}
-                        <li class="groupby">{{ .Key }}</li>
-                        {{ range sort .Pages "Date" "desc" }}
-                            {{ partial "li.html" . }}
-                        {{ end }}
+                    {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "articles")) "desc" }}
+                        {{ partial "li.html" . }}
                     {{ end }}
                     </ul>
 
